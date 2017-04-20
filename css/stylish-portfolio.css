@@ -171,6 +171,13 @@ hr.small {
     padding: 50px 0;
 }
 
+/* Background */
+
+.bg-dark {
+  background-color: #222222;
+  color: white;
+}
+
 /* Services */
 
 .services {
