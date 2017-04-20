@@ -178,6 +178,12 @@ hr.small {
   color: white;
 }
 
+/* Text dark */
+
+.text-dark {
+  color: #222222;
+}
+
 /* Services */
 
 .services {
