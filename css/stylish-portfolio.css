@@ -183,12 +183,12 @@ hr.small {
 
 .bg-dark {
   background-color: #222222;
+  color: white;
 }
 
 /* Text dark */
 
-.dark {
-  background-color: #222222;
+.dark-circle {
   color: #222222;
 }
 
