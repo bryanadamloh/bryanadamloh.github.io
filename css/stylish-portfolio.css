@@ -182,16 +182,8 @@ hr.small {
 /* Background */
 
 .bg-dark {
-  background-color: #222222;
-  color: white;
-}
-
-/* Text dark */
-
-.dark {
-  background-color: #222222;
+  background-color: #fff;
   color: #222222;
-}
 
 /* Faq */
 
