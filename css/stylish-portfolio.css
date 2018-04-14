@@ -161,7 +161,19 @@ hr.small {
 
 /* Header */
 
-.header {
+#top {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/workspace.jpg) no-repeat center center scroll;    
+  -webkit-background-size: cover;   
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/*.header {
     display: table;
     position: relative;
     width: 100%;
@@ -171,19 +183,59 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}*/
+
+#top:after {
+  content:'';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
+
+/*.header:after {
+  content:'';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}*/
+
+#top .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*.header .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}*/
 
 /* About */
 
-.about {
+#about {
     padding: 50px 0;
 }
 
 /* Background */
 
 .bg-dark {
-  background-color: white;
-  color: #222222;
+  background-color: #222222;
+  color: white;
 }
 
 /* Text dark */
@@ -194,12 +246,8 @@ hr.small {
 
 /* Faq */
 
-.faq {
+#why {
     padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
 }
 
 /* Callout */
@@ -261,4 +309,10 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+.js .to-animate,
+.js .to-animate-2,
+.js .single-animate {
+  opacity: 0;
 }
